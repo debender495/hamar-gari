@@ -1,0 +1,9 @@
+##AUTOMATIC GENERATED RECOVERY: by [Application]
+
+$$ Number of transaction references that is not unique $$
+
+Reference | AccountNumber      | Description                     | StartBalance | Mutation | EndBalance
+-------------------------------------------------------------------------------------------------------
+$$187997|NL91RABO0315273637|Clothes for Rik King |57.6 |-32.98|24.62
+$$187997|NL91RABO0315273638|Clothes for Rik King bla |57.6 |-32.98|24.62
+

@@ -1,0 +1,22 @@
+<#setting number_format=",##0.0">
+##AUTOMATIC GENERATED RECOVERY: by [Application]
+
+<#if reportDTO.recordWithDuplicateReference?has_content>
+$$ Number of transaction references that is not unique $$
+
+Reference | AccountNumber      | Description                     | StartBalance | Mutation | EndBalance
+-------------------------------------------------------------------------------------------------------
+<#list reportDTO.recordWithDuplicateReference as record>
+$$${record.reference}|${record.accountNumber}|${record.description}|${record.startBalance}|${record.mutation}|${record.endBalance}
+</#list>
+</#if>
+
+<#if reportDTO.recordWithWrongEndbalance?has_content>
+$$ Number of incorrect end balance $$
+
+Reference | AccountNumber      | Description                     | StartBalance | Mutation | EndBalance
+-------------------------------------------------------------------------------------------------------
+<#list reportDTO.recordWithWrongEndbalance as record>
+$$${record.reference}|${record.accountNumber}|${record.description}|${record.startBalance}|${record.mutation}|${record.endBalance}
+</#list>
+</#if>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.deb.gari</groupId>
+    <artifactId>parent-build</artifactId>
+    <version>NEXT-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <name>Hamar gari - build</name>
+
+    <modules>
+        <module>parent</module>
+        <module>model</module>
+        <module>export-api</module>
+        <module>import-api</module>
+        <module>import-api-impl</module>
+        <module>export-api-impl</module>
+        <module>main-api</module>
+    </modules>
+
+
+</project>
